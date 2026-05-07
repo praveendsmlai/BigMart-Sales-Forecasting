@@ -16,7 +16,7 @@ from Bigmart_Sales_Prediction.entity.artifact_entity import (
 )
 from Bigmart_Sales_Prediction.entity.config_entity import ModelTrainerConfig
 
-from Bigmart_Sales_Prediction.utils.ml_utils.model.estimator import CarPriceModel
+from Bigmart_Sales_Prediction.utils.ml_utils.model.estimator import Bigmart_Sales_Prediction
 from Bigmart_Sales_Prediction.utils.main_utils.utils import (
     save_object,
     load_object,
@@ -150,7 +150,7 @@ class ModelTrainer:
                 )
                 os.makedirs(model_dir_path, exist_ok=True)
 
-                Car_Price_Model = CarPriceModel(  # 🔥 Rename this class ideally
+                Bigmart_Sales_Prediction_Model = Bigmart_Sales_Prediction(  # 🔥 Rename this class ideally
                     preprocessor=preprocessor,
                     model=best_model,
                 )
@@ -163,7 +163,7 @@ class ModelTrainer:
 
             save_object(
                 self.model_trainer_config.trained_model_file_path,
-                Car_Price_Model
+                Bigmart_Sales_Prediction_Model
             )
 
         # Optional: Save raw model separately

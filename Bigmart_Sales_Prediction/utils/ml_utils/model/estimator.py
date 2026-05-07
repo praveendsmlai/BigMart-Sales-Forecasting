@@ -6,7 +6,7 @@ import sys
 from Bigmart_Sales_Prediction.exception.exception import CustomException
 from Bigmart_Sales_Prediction.logging.logger import logging
 
-class CarPriceModel:
+class Bigmart_Sales_Prediction:
     def __init__(self,preprocessor,model):
         try:
             self.preprocessor = preprocessor
